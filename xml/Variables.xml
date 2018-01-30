@@ -67,6 +67,7 @@
 		<value>DefaultAudio.png</value>
 	</variable>
 	<variable name="InfoWallThumbVar">
+		<value condition="String.IsEqual(ListItem.DbType,episode) + !String.IsEmpty(Listitem.Art(tvshow.poster))">$INFO[Listitem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
